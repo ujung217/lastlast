@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JYP_Entertainment</title>
+    <link rel="stylesheet" href="css/last-Style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.ico">
+
+    <!-- 파비콘 -->
+</head>
+<body>
+    <script>
+
+        $(document).ready(function(){
+            $("#header").load("header.html",function(){
+                $(window).scroll(function(){
+                    var sct = $(window).scrollTop();
+                    if(sct>0){
+                        $('#header').addClass('on');
+                    }else{
+                        $('#header').removeClass('on');
+                    }
+                });
+
+                $('.menu_btn').click(function(){
+                    $('#right_menu').addClass('on');
+                });
+            });
+            $('#right_menu').load("menu.html", function(){
+              $('.close_btn').click(function(){
+                  $('#right_menu').removeClass('on');
+              });
+            });
+        });
+    
+    </script>
+    <header id="header" class="main-header on">
+        <div class="wrap">
+            <h1 class="logo">
+                <a href="#"><img src="images/jyp_white.png" alt="logo_white"></a>
+            </h1>
+            <h1 class="logo_blue">
+                <a href="#"><img src="images/jyp_blue.png" alt="logo_blue"></a>
+            </h1>
+            
+            <button class="menu_btn">
+                <div class="line_wrap">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </button>
+        </div>
+    </header>
+    <header id="right_menu">
+        <div class="wrap">
+            <button class="close_btn">
+                <div class="line_wrap">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </button>
+            <nav class="all_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#section02">About</a></li>
+                    <li><a href="#section03">News</a></li>
+                    <li><a href="#section04">Artist</a></li>
+                    <li><a href="#section05">Audition</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <!-- navi end -->
+
+    <!-- main-slider -->
+        <div class="main-slider">
+           <div class="banner">
+               <img src="images/main_banner01_itzy.jpg" alt="itzy">
+           </div>
+           <div class="banner">
+               <img src="images/main_banner02_itzy.jpg" alt="itzy">
+           </div>
+           <div class="banner">
+               <img src="images/main_banner03-twice.jpg" alt="twice">
+           </div>
+           <div class="banner">
+               <img src="images/main_banner04.jpg" alt="rain">
+           </div>
+           <div class="banner">
+               <img src="images/main_banner05-niziu.jpg" alt="niziu">
+           </div>
+        </div>
+    </section>
+
+        <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        
+        $('.main-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        });
+				
+    </script>
+    <!-- section01 end-->
+
+    <!-- section02 -->
+    
+    <section id="section02" class="section02">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="sec-02-title" data-aos="fade-in">
+                        <h1>Our Value,<br>
+                            Goal and Vision</h1>
+                    </div>
+                    <div class="sub-title" data-aos="fade-in">
+                        <p>About JYP</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="about-content">
+                        <div class="abount-content-section" data-aos="fade-in">
+                            <h3>Identity</h3>
+                            <h2>Leader In Entertainment</h2>
+                            <p>디지털 미디어 통합 마케팅 역량 보유</p>
+                        </div>
+                        <div class="abount-content-section" data-aos="fade-in">
+                            <h3>Strength</h3>
+                            <h2>데이터 기반의 오디언스 플래닝</h2>
+                            <p>전문적인 애드테크 활용 및 데이터 매니지먼트</p>
+                        </div>
+                        <div class="abount-content-section" data-aos="fade-in">
+                            <h3>Challenge</h3>
+                            <h2>Extend To The World</h2>
+                            <p>K-pop의 저변 및 영향력, 인기확장을 선도 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+        <div class="clearfix"></div>
+        
+    </section>
+        <!-- section02 end-->
+
+        <!-- section03 -->
+    <section id="section03" class="section03" >
+        <div class="container news">
+            <div class="row">
+                <div class="YOUTUBE" data-aos="fade-up"
+                data-aos-duration="1500">
+                    <h2 class="news-title">#YOUTUBE_official</h2>
+                    <div class="bar"></div>
+                    <div class="sec-03-content">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="sec-03-youtube">
+                                    <a href="https://www.youtube.com/watch?v=JYAfQ5S6gic"><img src="images/news/youtube-01.jpg" alt="요요미&박진영"></a>
+                                    <a href="https://www.youtube.com/watch?v=JYAfQ5S6gic"><h3>JYP & 요요미 “촌스러운 사랑 노래”</p></a>
+                                    <a href="https://www.youtube.com/watch?v=JYAfQ5S6gic"><p>박진영, '트로트 요정' 요요미와 프로젝트 시작<br>'JYP 하드대방출' 본격 시작</p></a>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="sec-03-youtube">
+                                    <a href="https://www.youtube.com/watch?v=-Bf_BB9iTNI"><img src="images/news/youtube-02.jpg" alt="비&박진영"></a>
+                                    <a href="https://www.youtube.com/watch?v=-Bf_BB9iTNI"><h3>비-박진영, 초특급 콜라보 RAIN X JYP</p></a>
+                                    <a href="https://www.youtube.com/watch?v=-Bf_BB9iTNI"><p>레전드 오브 레전드! 비와 JYP의 폭발적인 만남<br>“나로 바꾸자”, 싸이 특별출연까지..!</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="YOUTUBE" data-aos="fade-up"
+                data-aos-duration="1500">
+                    <h2 class="news-title">#INSTARGRAM_official</h2>
+                    <div class="bar"></div>
+                    <div class="sec-03-content">
+                        <div class="row">
+                            <div class="col-5 instargram">
+                                <div class="sec-03-instargram01">
+                                    <a href="https://www.instagram.com/itzy.all.in.us/"><p>#Itzy_official</p></a>
+                                </div>
+                            </div>
+                            <div class="col-5 instargram">
+                                <div class="sec-03-instargram02">
+                                    <a href="https://www.instagram.com/twicetagram/"><p>#Twice_official</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-10 clearfix" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h2 class="news-title">#Recent_Of_JYP</h2>
+                <div class="bar"></div>
+            
+            <div class="col-10">
+                <div class="sec-03-recent-content">
+                    <div class="row">
+                        <div class="sec-03-recent">
+                            <a href="https://www.chosun.com/entertainments/entertain_photo/2021/01/25/L5YDVGUGXFNRMYSCE55B3US3DM/"><img src="images/news/recent-01.jpg" alt="itzy"></a>
+                            <a href="https://www.chosun.com/entertainments/entertain_photo/2021/01/25/L5YDVGUGXFNRMYSCE55B3US3DM/"><h3>ITZY, 첫 영어 앨범 발매 “Not Shy”</h3></a>
+                            <a href="https://www.chosun.com/entertainments/entertain_photo/2021/01/25/L5YDVGUGXFNRMYSCE55B3US3DM/"><p>데뷔 후 첫 영어앨범 발매…<br>글로벌 맹활약, "전세계 팬들에 더 가까이"</p></a>
+                        </div>
+                        <div class="sec-03-recent">
+                            <a href="http://m.sportsworldi.com/view/20200707506304"><img src="images/news/recent-02.jpg" alt="boy-story"></a>
+                            <a href="http://m.sportsworldi.com/view/20200707506304"><h3>中그룹 ’보이스토리’ 언택트공연 338만..</h3></a>
+                            <a href="http://m.sportsworldi.com/view/20200707506304"><p>첫 회 공연 대비 약 320% 증가한 수치</p></a>
+                        </div>
+                        <div class="sec-03-recent">
+                            <a href="https://www.sedaily.com/NewsVIew/1ZBJH9BI1M"><img src="images/news/recent-03.jpg" alt="niziu"></a>
+                            <a href="https://www.sedaily.com/NewsVIew/1ZBJH9BI1M"><h3>니쥬, 日 오리콘 주간 차트 정상</h3></a>
+                            <a href="https://www.sedaily.com/NewsVIew/1ZBJH9BI1M"><p>발매 첫 주 31만1719포인트 기록<br>니쥬 "팬들과 천천히 나아가고 싶다"
+                                </p></a>
+                        </div>
+                        <div class="sec-03-recent">
+                            <a href="https://www.chosun.com/entertainments/entertain_photo/2021/02/10/2QHXX7WU3Z6OYTMHHCACIA3YP4/"><img src="images/news/recent-04.jpg" alt="twice"></a>
+                            <a href="https://www.chosun.com/entertainments/entertain_photo/2021/02/10/2QHXX7WU3Z6OYTMHHCACIA3YP4/"><h3>TWICE 'LIKEY' 뮤직비디오 5억뷰 돌파</h3></a>
+                            <a href="https://www.chosun.com/entertainments/entertain_photo/2021/02/10/2QHXX7WU3Z6OYTMHHCACIA3YP4/"><p>'CRY FOR ME' 빌보드 월드디지털 세일즈 1위<br>나오는 음원마다 히트 정조준</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+        <!-- section03 end -->
+
+        <!-- section04 -->
+    <section id="section04" class="section04">
+        <section class="slider">
+            <div>
+              <img src="images/artist/CD-01-jyp.png" alt="jyp">
+            </div>
+            <div>
+              <img src="images/artist/CD-02-day6.png" alt="day6">
+            </div>
+            <div>
+              <img src="images/artist/CD-03-straykids.png" alt="straykids">
+            </div>
+            <div>
+              <img src="images/artist/CD-04-bernard.png" alt="bernard">
+            </div>
+            <div>
+              <img src="images/artist/CD-05-niziu.png" alt="niziu">
+            </div>
+            <div>
+              <img src="images/artist/CD-06-2pm.png" alt="2pm">
+            </div>
+            <div>
+              <img src="images/artist/CD-07-twice.png" alt="twice">
+            </div>
+            <div>
+              <img src="images/artist/CD-08-itzy.png" alt="itzy">
+            </div>
+            <div>
+              <img src="images/artist/CD-09-boyStory.png" alt="boyStory">
+            </div>
+          </section>
+
+    </section>
+        
+		
+
+        <script>
+            function createSlick(){  
+
+                $(".slider").not('.slick-initialized').slick({
+                    centerMode: true,
+                    autoplay: true,
+                    dots: true,
+
+                    slidesToShow: 3,
+                    responsive: [{ 
+                        breakpoint: 768,
+                        settings: {
+                            dots: false,
+                            arrows: false,
+                            infinite: false,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        } 
+                    }]
+                });	
+
+                }
+
+                createSlick();
+
+                $(window).on( 'resize', createSlick );
+
+                    
+        </script>
+        <!-- section04 end -->
+
+        <!-- section05 -->
+    <section id="section05" class="section05 clearfix">
+        <div class="audition col-10">
+                <h2>SHOW ME<br>WHAT YOU GOT</h2>
+                <p>지금 차세대 스타가 되어보세요!</p>
+                <h3>ONLINE AUDITION</h3>
+                <a href="#" class="audition-btn" onClick="alert('신청 기간이 아닙니다.')">지원하기</a>
+        </div>
+    </section>
+        <!-- section05 end -->
+
+       
+</body>
+</html>
